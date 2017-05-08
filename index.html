@@ -3,91 +3,147 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Michelle Payne</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Khand|Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="favicon.ico">
 </head>
 <body>
 	<header>
-		<div class="logo">
-		</div>
-		<nav>
-			<a href="">Home</a>
-			<a href="">About</a>
-			<a href="">Portfolio</a>
-			<a href="">Skills</a>
-			<a href="">Timeline</a>
-			<a href="">Contact</a>
-		</nav>
-		<h3>Front-End Web Developer</h3>
-		<h1>Michelle Payne</h1>
-		<h4>The Best Thing I Ever Did Was Believe In Myself</h4>
+		<div id="home" class="wrapper">
+			<div class="navBar">
+				<nav>
+					<a href="#home">Home</a>
+					<a href="#about">About</a>
+					<a href="#skill">Skills</a>
+					<a href="#portfolio">Portfolio</a>
+					<a href="#contact">Contact</a>
+				</nav>
+				<div class="headingText wrapper">
+					<h3>Front-End Web Developer</h3>
+					<h1><span class="special">Michelle</span> Payne</h1>
+					<h4 class="headingH3">The best thing I ever did was believe in myself</h4>
+				</div>
+			</div>
+		</div>	
 	</header>
-	<section class="about">
-		<h4>About</h4>
-		<h2>Who I Am</h2>
-		<p>I am a talanted front-end developer with demonstrated expertise in project management. I have excelled at design execution with pixel perfect precision. I have a solid understanding of accessibility best practices and overall user experience in web applications.</p>
+	<section id="about" class="about wrapper">
+		<div class="aboutImage">
+			<img src="assets/profileImage.jpg" alt="">
+		</div>
+		<div class="aboutText wrapper">
+			<h2>Who I <span class="special">Am</span></h2>
+			<p>Hi! My name is Michelle and I'm a passionate front-end developer with demonstrated expertise in project management. I have excelled at design execution with pixel perfect precision. I have a solid understanding of accessibility best practices and overall user experience in web applications.</p>
+			<p>When I am not developing really cool websites or updating my skills, you can find me exploring new locations, discovering new music and planning my next adventure. </p>
+		</div>
 	</section>
-	<section class="portfolio">
-		<h4>Portfolio</h4>
-		<h2>What I Have Worked On</h2>
-		<!-- breakup generator -->
-		<h4>Breakup Generator</h4>
-		<p>jQuery Interactive Site</p>
-		<!-- nomad list -->
-		<h4>Nomad List</h4>
-		<p>Agency API Project</p>
-		<!-- beer explorer -->
-		<h4>Beer Explorer</h4>
-		<p>API Web Application</p>
-		<!-- goal digger -->
-		<h4>Goal Digger</h4>
-		<p>React & Firebase</p>
+	<span id="skill"></span>
+	<section  class="block">
 	</section>
 	<section class="skills">
-		<h4>Skills</h4>
-		<h2>Skills In My Tool Box</h2>
-		<ul>
-			<li>Browser Development Tools</li>
-			<li>CSS3</li>
-			<li>Command Line</li>
-			<li>Firebase</li>
-			<li>Git/GitHub</li>
-			<li>HTML5</li>
-			<li>JavaScript/ES6</li>
-			<li>jQuery</li>
-			<li>Pair Programming</li>
-			<li>React</li>
-			<li>RESTful APIs</li>
-			<li>Responsive Design</li>
-			<li>SCSS</li>
-			<li>Sublime Text 3</li>
-			<li>Underscore.js</li>
-			<li>Website Accessibility</li>
-		</ul>
+		<i class="devicon-html5-plain"></i>
+		<i class="devicon-css3-plain"></i>
+		<i class="devicon-sass-original"></i>
+		<i class="fa fa-terminal" aria-hidden="true"></i>
+		<i class="devicon-javascript-plain"></i>
+		<i class="devicon-jquery-plain"></i>
+		<i class="devicon-gulp-plain"></i>
+		<i class="devicon-github-plain"></i>
+		<i class="devicon-git-plain"></i>
+		<i class="devicon-react-original"></i>
+		<i class="fa fa-wordpress" aria-hidden="true"></i>
 	</section>
-	<section class="timeline">
-		<h4>Timeline</h4>
-		<h2>From Server to Developer</h2>
-		<ul>
-			<li>Server</li>
-			<li>Intro to Web Development</li>
-			<li>Advanced Web Development</li>
-			<li>Front-End Web Development Immersive</li>
-			<li>Working With You</li>
-		</ul>
-		<ul>
-			<li>2008</li>
-			<li>2016</li>
-			<li>2017</li>
-			<li>2017</li>
-			<li>Tomorrow?</li>
-		</ul>
+	<section id="portfolio" class="portfolio wrapper">
+		<div class="portfolioTitle">
+			<h2><span class="special">My</span> Projects</h2>
+		</div>	
+		<div class="pieces">
+		<div class="border ">
+			<div class="imageContainer psd">
+			<img src="assets/psd.jpg" alt="">
+			</div>	
+			<div class="description">
+				 <h4>PSD Conversion</h4>
+				<p>A three page PSD Conversion application of a restaurant website using SCSS.</p>
+				<a class="view" target="_blank" href="http://www.themichellepayne.com/psd/">View Live</a>
+			</div>	
+		</div>
+			<div class="border unique">
+				<div class="imageContainer nomad">
+				<img src="assets/firstHero.jpg" alt="">
+				</div>	
+				<div class="description">
+					 <h4>Nomad Traveller</h4>
+					<p>A creative JavaScript application built using the Nomad List API that helps users budget for a trip based on certain travel habits. Developed in collaboration with Nick Evans & Jessica Ho.</p>
+					<a class="view" target="_blank" href="http://www.themichellepayne.com/nomadTraveller">View Live</a>
+				</div>	
+			</div>
+			<div class="border ">
+				<div class="imageContainer breakup">
+				<img src="assets/breakup.jpg" alt="">
+				</div>	
+				<div class="description">
+					<h4>Breakup Generator</h4>
+					<p>An interactive application that utilizes the jQuery library, and helps users breakup with someone in a playful manner. Built in collaboration with Johnathon Dirstein.</p>
+					<a class="view" target="_blank" href="http://www.themichellepayne.com/breakup">View Live</a>
+				</div>
+			</div>	
+			<div class="border unique ">
+				<div class="imageContainer goal">
+				<img src="assets/sparkle.jpg" alt="">
+				</div>	
+				<div class="description">
+						<h4>Goal Digger </h4>
+					<p>A fun and interactive web application that allows users to create an account, login and create, track or remove goals. Built using React and Firebase. </p>
+					<a class="view" target="_blank" href="http://www.themichellepayne.com/goalDigger">View Live</a>
+				</div>	
+			</div>
+		</div>
+	</section>
+	
 
-	</section>
-	<section class="contact">
-		<h4>Contact</h4>
-	</section>
+	<section class="contactthanks">	
+	<div id="contact" class="contact wrapper">
+		<div class="thankyou">
+			<h2> Contact <span class="special">Me</span></h2>
+		</div>
+		<div class="contactInfo">	
+			<h3><i class="fa fa-envelope" aria-hidden="true"></i>Email Address</h3>
+			<p>michelle@themichellepayne.com</p>
+			<p>info@themichellepayne.com</p>
+			<div class="icons">
+				<a target="_blank" href="https://twitter.com/the_mpayne"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a target="_blank" href="http://www.linkedin.com/in/michelle-payne"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+			</div>
+			
+		</div>
+	</div>
+<section>	
 	<footer>
+		<div class="wrapper">
+			<p class="specialP">&copy 2017 All Rights Reserved by Michelle Payne.</p>
+			
+		</div>
 	</footer>
 
-	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>	
+<script>$(function() {
+	$('a[href*="#"]:not([href="#"])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		if (target.length) {
+			$('html, body').animate({
+		 	scrollTop: target.offset().top
+			}, 1000);
+			return false;
+		}
+		}
+		});
+	});
+	</script>
 </body>
 </html>
